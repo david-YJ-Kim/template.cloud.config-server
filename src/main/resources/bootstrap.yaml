@@ -1,0 +1,28 @@
+# configserver > bootstrap.yaml
+spring:
+  application:
+    name: configserver
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: file:C:/codespace/tsh/template/config.server/src/main/resources/sample-repo
+
+
+
+#GIT 설정
+#spring:
+#  application:
+#    name: configserer
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri:
+#          username:
+#          password:
+#          search-paths: 
+#        encrypt:
+#          enabled: false
